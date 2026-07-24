@@ -13,8 +13,13 @@
   * { margin:0; padding:0; box-sizing:border-box; }
   body { background:var(--white); color:var(--body); line-height:1.65;
     font-family:'Inter',-apple-system,'Helvetica Neue',Arial,sans-serif; }
-  .band { background:var(--black); padding:34px 24px; }
-  .band img { display:block; max-width:400px; width:88%; margin:0 auto; }
+  .band { background:var(--black); padding:38px 24px; }
+  .lockup { display:flex; align-items:center; justify-content:center; gap:26px; }
+  .lockup .name { color:var(--white); font-weight:900; font-size:clamp(44px,9vw,64px);
+    letter-spacing:-.04em; line-height:1; }
+  .lockup .sep { width:1px; height:56px; background:rgba(255,255,255,.22); }
+  .lockup .tag { color:rgba(255,255,255,.72); font-weight:300; font-size:clamp(15px,3vw,19px);
+    line-height:1.45; letter-spacing:.02em; }
   .wrap { max-width:680px; margin:0 auto; padding:0 24px; }
   header.hero { text-align:center; padding:56px 0 40px; }
   h1 { color:var(--near); font-size:2rem; font-weight:700; letter-spacing:-.5px; margin-bottom:10px; }
@@ -40,7 +45,13 @@
 </style>
 </head>
 <body>
-  <div class="band"><img src="brandmark.svg" alt="Levi — Seu conselheiro financeiro"></div>
+  <div class="band">
+    <div class="lockup" role="img" aria-label="Levi — Seu conselheiro financeiro">
+      <span class="name">Levi</span>
+      <span class="sep"></span>
+      <span class="tag">Seu conselheiro<br>financeiro</span>
+    </div>
+  </div>
 
   <header class="hero wrap">
     <h1>O conselheiro que lê seus números de verdade.</h1>
