@@ -13,19 +13,19 @@
     fill="#ffffff">Levi</text>
   <!-- Tagline -->
   <text
-    x="1050" y="220"
+    x="1055" y="205"
     font-family="Inter, -apple-system, Helvetica Neue, sans-serif"
     font-weight="300"
-    font-size="28"
+    font-size="46"
     letter-spacing="1"
     text-anchor="middle"
-    fill="rgba(255,255,255,0.55)">Seu conselheiro</text>
+    fill="rgba(255,255,255,0.70)">Seu conselheiro</text>
   <text
-    x="1050" y="260"
+    x="1055" y="263"
     font-family="Inter, -apple-system, Helvetica Neue, sans-serif"
     font-weight="300"
-    font-size="28"
+    font-size="46"
     letter-spacing="1"
     text-anchor="middle"
-    fill="rgba(255,255,255,0.55)">financeiro</text>
+    fill="rgba(255,255,255,0.70)">financeiro</text>
 </svg>
