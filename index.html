@@ -5,72 +5,85 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Levi · Conselheiro Financeiro</title>
 <meta name="description" content="Levi é um conselheiro financeiro pessoal no WhatsApp: lê seus números reais via Open Finance e te aconselha todos os dias, com um plano vivo. Acesso por convite.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
 <style>
-  :root { --bg:#0b0b0c; --fg:#f2f0ea; --muted:#a8a49a; --line:#232326; --accent:#e8c15a; }
+  :root { --black:#000000; --near:#1d1d1f; --body:#424245; --muted:#6e6e73; --soft:#a1a1a6;
+    --line:#d2d2d7; --bg2:#f5f5f7; --white:#ffffff; --blue:#0071e3; --blue-h:#0077ed; --green:#1a7431; }
   * { margin:0; padding:0; box-sizing:border-box; }
-  body { background:var(--bg); color:var(--fg); font-family:Georgia,'Times New Roman',serif; line-height:1.65; }
+  body { background:var(--white); color:var(--body); line-height:1.65;
+    font-family:'Inter',-apple-system,'Helvetica Neue',Arial,sans-serif; }
+  .band { background:var(--black); padding:40px 24px; }
+  .band img { display:block; max-width:520px; width:100%; margin:0 auto; }
   .wrap { max-width:680px; margin:0 auto; padding:0 24px; }
-  header { padding:64px 0 8px; }
-  .logo { width:56px; height:56px; border-radius:50%; background:var(--fg); color:var(--bg);
-    display:flex; align-items:center; justify-content:center; font-size:30px; font-weight:bold; font-family:Arial,sans-serif; }
-  h1 { font-size:2.1rem; margin:24px 0 4px; letter-spacing:-.5px; }
-  .sub { color:var(--muted); font-size:1.15rem; }
+  header.hero { text-align:center; padding:56px 0 40px; }
+  h1 { color:var(--near); font-size:2rem; font-weight:700; letter-spacing:-.5px; margin-bottom:10px; }
+  .sub { color:var(--muted); font-size:1.15rem; font-weight:300; max-width:540px; margin:0 auto; }
   section { padding:36px 0; border-bottom:1px solid var(--line); }
-  h2 { font-size:1.05rem; text-transform:uppercase; letter-spacing:.14em; color:var(--accent);
-    font-family:Arial,sans-serif; font-weight:600; margin-bottom:14px; }
+  section:last-of-type { border-bottom:none; }
+  h2 { color:var(--near); font-size:1.2rem; font-weight:600; letter-spacing:-.2px; margin-bottom:12px; }
   p + p { margin-top:12px; }
   ol { margin:8px 0 0 20px; }
   li { margin-top:10px; }
-  .muted { color:var(--muted); }
-  a { color:var(--fg); }
-  .cta { display:inline-block; margin-top:18px; padding:12px 22px; border:1px solid var(--fg);
-    border-radius:999px; text-decoration:none; font-family:Arial,sans-serif; font-size:.95rem; }
-  footer { padding:32px 0 56px; color:var(--muted); font-size:.85rem; font-family:Arial,sans-serif; }
+  strong { color:var(--near); font-weight:600; }
+  .muted { color:var(--soft); }
+  a { color:var(--blue); text-decoration:none; }
+  a:hover { color:var(--blue-h); }
+  .cta { display:inline-block; margin-top:18px; padding:13px 26px; background:var(--blue);
+    color:var(--white); border-radius:999px; font-size:.95rem; font-weight:500; }
+  .cta:hover { background:var(--blue-h); color:var(--white); }
+  .alt { background:var(--bg2); }
+  .alt .inner { max-width:680px; margin:0 auto; padding:36px 24px; }
+  footer { background:var(--bg2); color:var(--muted); font-size:.82rem; padding:32px 24px 56px; }
+  footer .inner { max-width:680px; margin:0 auto; }
   footer p + p { margin-top:6px; }
 </style>
 </head>
 <body>
-<div class="wrap">
-  <header>
-    <div class="logo">L</div>
-    <h1>Levi · Conselheiro Financeiro</h1>
-    <p class="sub">O conselheiro que lê seus números de verdade — e conversa com você todo dia, no WhatsApp.</p>
+  <div class="band"><img src="brandmark.svg" alt="Levi — Seu conselheiro financeiro"></div>
+
+  <header class="hero wrap">
+    <h1>O conselheiro que lê seus números de verdade.</h1>
+    <p class="sub">E conversa com você todo dia, no WhatsApp — com um plano vivo, construído sobre o que realmente acontece com o seu dinheiro.</p>
+    <a class="cta" href="https://wa.me/5511942955474">Falar com o Levi</a>
+    <p class="muted" style="margin-top:12px; font-size:.85rem">Acesso por convite · sem convite, a conversa entra na lista de espera</p>
   </header>
 
-  <section>
-    <h2>O que o Levi faz</h2>
-    <p>O Levi se conecta às suas contas e cartões pelo <strong>Open Finance</strong> (o sistema regulado pelo Banco Central) e passa a enxergar o que acontece com o seu dinheiro — sem você digitar nada.</p>
-    <p>Com os números reais na mão, ele monta um retrato honesto do seu mês, constrói um plano de ação vivo e acompanha a execução com você: um café da manhã com a leitura do dia, um pulso semanal e conselho direto sempre que você chamar.</p>
-  </section>
+  <div class="wrap">
+    <section>
+      <h2>O que o Levi faz</h2>
+      <p>O Levi se conecta às suas contas e cartões pelo <strong>Open Finance</strong> (o sistema regulado pelo Banco Central) e passa a enxergar o que acontece com o seu dinheiro — sem você digitar nada.</p>
+      <p>Com os números reais na mão, ele monta um retrato honesto do seu mês, constrói um plano de ação vivo e acompanha a execução com você: um café da manhã com a leitura do dia, um pulso semanal e conselho direto sempre que você chamar.</p>
+    </section>
 
-  <section>
-    <h2>Como funciona</h2>
-    <ol>
-      <li><strong>Convite.</strong> O acesso é por convite — o Levi atende um grupo pequeno de pessoas por vez.</li>
-      <li><strong>Conexão.</strong> Você conecta bancos, cartões e corretora pelo Open Finance, em poucos minutos.</li>
-      <li><strong>Conselho.</strong> O Levi lê tudo, te devolve o retrato e começa o acompanhamento diário no WhatsApp.</li>
-    </ol>
-  </section>
+    <section>
+      <h2>Como funciona</h2>
+      <ol>
+        <li><strong>Convite.</strong> O acesso é por convite — o Levi atende um grupo pequeno de pessoas por vez.</li>
+        <li><strong>Conexão.</strong> Você conecta bancos, cartões e corretora pelo Open Finance, em poucos minutos.</li>
+        <li><strong>Conselho.</strong> O Levi lê tudo, te devolve o retrato e começa o acompanhamento diário no WhatsApp.</li>
+      </ol>
+    </section>
 
-  <section>
-    <h2>Segurança e privacidade</h2>
-    <p>A conexão bancária usa o Open Finance regulado — o Levi lê extratos, mas <strong>não movimenta dinheiro</strong> e não tem acesso a senhas bancárias.</p>
-    <p>Seus dados são tratados conforme a <strong>LGPD</strong>: finalidade declarada, consentimento revogável e nada de venda de dados. O que é seu fica seu.</p>
-  </section>
+    <section>
+      <h2>Segurança e privacidade</h2>
+      <p>A conexão bancária usa o Open Finance regulado — o Levi lê extratos, mas <strong>não movimenta dinheiro</strong> e não tem acesso a senhas bancárias.</p>
+      <p>Seus dados são tratados conforme a <strong>LGPD</strong>: finalidade declarada, consentimento revogável e nada de venda de dados. O que é seu fica seu.</p>
+    </section>
 
-  <section>
-    <h2>Contato</h2>
-    <p>WhatsApp oficial: <a href="https://wa.me/5511942955474">+55 11 94295-5474</a></p>
-    <p>E-mail: <a href="mailto:tuliofelipecalaca@gmail.com">tuliofelipecalaca@gmail.com</a></p>
-    <a class="cta" href="https://wa.me/5511942955474">Falar com o Levi</a>
-    <p class="muted" style="margin-top:14px">Sem convite, a conversa entra na lista de espera.</p>
-  </section>
+    <section>
+      <h2>Contato</h2>
+      <p>WhatsApp oficial: <a href="https://wa.me/5511942955474">+55 11 94295-5474</a></p>
+      <p>E-mail: <a href="mailto:tuliofelipecalaca@gmail.com">tuliofelipecalaca@gmail.com</a></p>
+    </section>
+  </div>
 
   <footer>
-    <p>Levi · Conselheiro Financeiro</p>
-    <p>TREZE TT ASSESSORIA E CONSULTORIA FINANCEIRA LTDA · CNPJ 35.582.757/0001-15</p>
-    <p>O Levi é um serviço de aconselhamento e organização financeira pessoal. Não é consultoria de valores mobiliários e não recomenda ativos de investimento.</p>
+    <div class="inner">
+      <p><strong style="color:var(--near)">Levi · Conselheiro Financeiro</strong></p>
+      <p>TREZE TT ASSESSORIA E CONSULTORIA FINANCEIRA LTDA · CNPJ 35.582.757/0001-15</p>
+      <p>O Levi é um serviço de aconselhamento e organização financeira pessoal. Não é consultoria de valores mobiliários e não recomenda ativos de investimento.</p>
+    </div>
   </footer>
-</div>
 </body>
 </html>
