@@ -103,10 +103,15 @@
   <ul>
     <li><strong>Pluggy</strong> — conexão Open Finance com as instituições financeiras que você autorizar.</li>
     <li><strong>Meta (WhatsApp Business)</strong> — o canal da conversa.</li>
-    <li><strong>Anthropic</strong> — processamento de linguagem que dá voz ao Levi.</li>
-    <li><strong>Groq</strong> — transcrição dos seus áudios.</li>
-    <li><strong>Railway e Supabase</strong> — hospedagem e banco de dados.</li>
-    <li><strong>PostHog e Sentry</strong> — telemetria de produto e monitoramento de erros.</li>
+    <li><strong>Anthropic</strong> — processamento de linguagem que dá voz ao Levi: recebe as suas mensagens e os números necessários para responder.</li>
+    <li><strong>Groq</strong> — transcrição dos seus áudios. A <strong>OpenAI</strong> faz o mesmo papel apenas como reserva, se a Groq estiver fora do ar.</li>
+    <li><strong>ElevenLabs</strong> — a voz do Levi quando ele responde em áudio; recebe só o texto da resposta.</li>
+    <li><strong>Railway e Supabase</strong> — hospedagem, banco de dados e arquivos.</li>
+    <li><strong>PostHog e Sentry</strong> — medição de uso do produto e monitoramento de erros, sem o seu telefone e sem o texto das suas mensagens.</li>
+    <li><strong>Stripe</strong> — cobrança da assinatura.</li>
+    <li><strong>Resend</strong> — envio de e-mails, como o código de entrada no app.</li>
+    <li><strong>Apple e Google</strong> — entrada no app com a sua conta Apple ou Google, se você escolher, e avisos no celular.</li>
+    <li><strong>Logo.dev</strong> — recebe só o nome ou o site das lojas onde você compra, para mostrar o logo delas; nenhum dado seu.</li>
   </ul>
   <p>Alguns desses operadores processam dados fora do Brasil (Estados Unidos e União Europeia). Essas
   transferências seguem o art. 33 da LGPD, com salvaguardas contratuais adequadas.</p>
@@ -121,9 +126,14 @@
 
 <section>
   <h2>7. Por quanto tempo guardamos</h2>
-  <p>Enquanto você for usuário, os dados ficam ativos para o serviço. Se a relação terminar, guardamos
-  apenas o que a lei exigir (registros de operações, prazos regulatórios) e eliminamos ou anonimizamos
-  o restante em prazo razoável.</p>
+  <p>Histórico financeiro só tem valor se for longo. Por isso, enquanto você for usuário, todos os seus
+  dados ficam guardados, sem prazo para apagar.</p>
+  <p>Se você <strong>cancelar a assinatura</strong>, guardamos os seus dados por <strong>1 ano</strong> a partir
+  do cancelamento, para o caso de você voltar. Passado esse ano sem reativar, a sua conta e tudo o que
+  está nela são apagados.</p>
+  <p>Se você pedir para <strong>excluir a conta</strong> (no Caderno do Levi), apagamos
+  tudo na hora: conversas, extratos, conexões com bancos, arquivos e o seu cadastro. Guardamos apenas o que
+  a lei nos obriga a guardar.</p>
 </section>
 
 <section>
@@ -139,7 +149,8 @@
 
 <section>
   <h2>9. Crianças e adolescentes</h2>
-  <p>O Levi é um serviço financeiro para maiores de 18 anos e não é direcionado a crianças ou adolescentes.</p>
+  <p>O Levi é um serviço financeiro pensado para maiores de 18 anos. Quem tem menos de 18 anos pode
+  conversar com o Levi, mas não pode conectar contas de banco.</p>
 </section>
 
 <section>
@@ -148,7 +159,7 @@
   mudança valer. A versão vigente estará sempre nesta página.</p>
 </section>
 
-<p class="stamp">Vigente desde 18 de agosto de 2026 · TREZE TT ASSESSORIA E CONSULTORIA FINANCEIRA LTDA · CNPJ 35.582.757/0001-15</p>
+<p class="stamp">Vigente desde 18 de novembro de 2026 (versão anterior: 18 de agosto de 2026) · TREZE TT ASSESSORIA E CONSULTORIA FINANCEIRA LTDA · CNPJ 35.582.757/0001-15</p>
 </div>
 </body>
 </html>
